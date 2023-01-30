@@ -4,11 +4,13 @@ function findResult() {
     
         // Validates if the user inputs a valid number or if the number length is not over 10 characters
         while (isNaN(num1) || num1.toString().length > 10) {
+            let errorMessage = [];
             if (isNaN(num1)) {
-                alert("Please enter valid number");
+                errorMessage = "Please enter valid numbers";
         }  else {
-                alert("Keep the number length to 10 digits or less");
+                errorMessage = "Keep the number length to 10 digits or less";
         }
+        alert(errorMessage);
         num1 = parseInt(prompt("Enter a number:"));
         }
          
