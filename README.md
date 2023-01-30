@@ -2,8 +2,8 @@
 
 ## JS1 - Terminology & Definitions
 
-## 1. Name the three ways to declare a variable?
-#### The three ways to declare a variable in JavaScript are: var, let, and const.
+### 1. Name the three ways to declare a variable?
+#### The three ways to declare a variable in JavaScript are: `var`,`let` and `const`.
 2. Which of the three variable declarations should you avoid and why?
 3. What rules should you follow when naming variables?
 4. What should you look out for when using the + operator with numbers and strings?
