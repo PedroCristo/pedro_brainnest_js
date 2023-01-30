@@ -10,9 +10,9 @@
 
 ### 3. What rules should you follow when naming variables?
 #### When naming variables in JavaScript, it is important to follow the following rules:
-     - The name should start with a letter, underscore, or dollar sign.
-     - The name should only contain letters, numbers, underscores, or dollar signs.
-     - The name should not be a reserved word.
+- The name should start with a letter, underscore, or dollar sign.
+- The name should only contain letters, numbers, underscores, or dollar signs.
+- The name should not be a reserved word.
 
 ### 4. What should you look out for when using the + operator with numbers and strings?
 #### When using the + operator with numbers and strings, the operator may perform addition or concatenation, depending on the types of the operands. It is important to be mindful of this and to explicitly convert types if necessary.
