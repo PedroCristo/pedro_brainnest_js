@@ -73,9 +73,9 @@ The substr method is used to extract a part of a string. It takes two arguments 
 ### 22. What are the three logical operators and what do they stand for?
 #### The three logical operators are:
 
-`AND (&&)`
-`OR (||)`
-`NOT (!)`
+- `AND (&&)`
+- `OR (||)`
+- `NOT (!)`
 
 ### 23. What are the comparison operators?
 #### The comparison operators are:
@@ -108,12 +108,13 @@ The substr method is used to extract a part of a string. It takes two arguments 
 ### 27. What is the syntax for an if/else conditional?
 #### The syntax for an if/else conditional is:
 
-- if (condition) {
-  - // code to be executed if condition is true
-- } else {
-  - // code to be executed if condition is false
-- }
-
+```
+if (condition) {
+  // code to be executed if condition is true
+} else {
+  // code to be executed if condition is false
+}
+```
 ### 28. What is the syntax for a switch statement?
 
 ### 29. What is the syntax for a ternary operator?
