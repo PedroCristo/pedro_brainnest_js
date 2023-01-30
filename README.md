@@ -66,9 +66,7 @@
 #### To escape characters in a string, you can use a backslash (`\`).
 
 ### 21. What is the difference between the slice/substring/substr string methods?
-- The `slice` method is used to extract a part of a string. It takes two arguments - the starting index and the ending index (non-inclusive).
-The substring method is used to extract a part of a string, similar to the slice method. The difference is that substring automatically swaps the arguments if the first argument is larger than the second.
-The substr method is used to extract a part of a string. It takes two arguments - the starting index and the length of the substring to extract.
+#### The `slice` method is used to extract a part of a string. It takes two arguments - the starting index and the ending index (non-inclusive). The `substring` method is used to extract a part of a string, similar to the `slice` method. The difference is that `substring` automatically swaps the arguments if the first argument is larger than the second. The `substr` method is used to extract a part of a string. It takes two arguments - the starting index and the length of the substring to extract.
 
 ### 22. What are the three logical operators and what do they stand for?
 #### The three logical operators are:
@@ -116,19 +114,48 @@ if (condition) {
 }
 ```
 ### 28. What is the syntax for a switch statement?
+#### The syntax for a switch statement is:
+
+```
+switch (expression) {
+  case value1:
+    // code to be executed if expression is equal to value1
+    break;
+  case value2:
+    // code to be executed if expression is equal to value2
+    break;
+  ...
+  default:
+    // code to be executed if expression does not match any of the cases
+    break;
+}
+```
 
 ### 29. What is the syntax for a ternary operator?
+### The syntax for a ternary operator is:
+
+```
+condition ? expression1 : expression2
+```
+- The operator returns expression1 if condition is truthy and expression2 if it's falsy.
 
 ### 30. What is nesting?
+#### Nesting is the practice of placing one control structure inside another. For example, an `if` statement inside an `if` statement.
 
 ### 31. What are functions useful for?
+#### Functions are useful for encapsulating a block of code that can be invoked multiple times. Functions can also take arguments and return values.
 
 ### 32. How do you invoke a function?
+#### I can invoke a function by calling its name followed by parentheses `()`.
 
 ### 33. What are anonymous functions?
+#### Anonymous functions are functions without a name. They are often used as arguments to other functions.
 
 ### 34. What is function scope?
+#### Function scope is the context in which a function is executed and the variables that are accessible within that function. Variables declared within a function are not accessible outside of it.
 
 ### 35. What are return values?
+#### Return values are the values that a function returns after it has finished executing. The return value can be used as the result of the function call.
 
 ### 36. What are arrow functions?
+#### Arrow functions are a shorthand syntax for writing functions in JavaScript. They are anonymous functions that are defined with the "=>" syntax. They allow for more concise function declarations and have a different behavior for the "this" keyword compared to traditional functions. Arrow functions are commonly used for short, one-line functions and for functional programming in JavaScript.
