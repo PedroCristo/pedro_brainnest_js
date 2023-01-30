@@ -108,11 +108,11 @@ The substr method is used to extract a part of a string. It takes two arguments 
 ### 27. What is the syntax for an if/else conditional?
 #### The syntax for an if/else conditional is:
 
-if (condition) {
-  // code to be executed if condition is true
-} else {
-  // code to be executed if condition is false
-}
+- if (condition) {
+  - // code to be executed if condition is true
+- } else {
+  - // code to be executed if condition is false
+- }
 
 ### 28. What is the syntax for a switch statement?
 
