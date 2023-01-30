@@ -40,6 +40,10 @@ ul {
     margin: 0 6px;
 }
 
+.p-25 {
+    padding: 25px;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -73,14 +77,13 @@ main {
 
 .result {
     border: 2px solid rgb(58, 58, 58);
-    width: 550px;
-    height: 100px;
+    width: 650px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
     margin-top: 50px;
-    padding: 25px;
 }
 
 .btn {
