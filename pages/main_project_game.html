@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title> Rock Paper Scissors  </title>
+</head>
+<body>
+    <main id="game-section" class="flex">
+        <div class="game flex">
+             <h1 id="final-result"> Let's play the Rock, Paper, Scissors game!! </h1>
+            <div class="game-results flex">
+                <h2 class="game-result"> Player: <span id="user-choice"></span> </h2>
+                <h2 class="game-result"> Computer: <span id="computer-choice"> </span></h2>
+                <h2 class="game-result"> Results: <span id="result"> </span></h2>
+            </div>
+            <div class="buttons-box">
+                <button id="rock"> Rock <br> ✊ </button>
+                <button id="paper"> Paper <br>✋ </button>
+                <button id="scissors"> Scissors <br> ✌</button>
+            </div>
+            <p id="restart-game" class="btn-restart"> Restart Game </p>
+            <div class="scores-box">
+                <div class="player-score flex">
+                    <h3>Player</h3>
+                    <span id="player-score"> 0 </span>
+                </div>
+                <div class="computer-score flex">
+                    <h3>Computer</h3>
+                    <span id="computer-score"> 0 </span>
+                </div>
+            </div>
+        </div>
+        <div class="exit">
+            <a class="btn" href="../index.html"> <- Go Back</a>
+        </div>
+    </main>
+</body>
+<!-- Script Js -->
+<script src="../assets/js/main_project_game.js"></script>
+</html>
