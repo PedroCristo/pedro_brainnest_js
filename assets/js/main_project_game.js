@@ -64,10 +64,9 @@ AVAILABLE_CHOICES.forEach(possibleChoice => possibleChoice.addEventListener('cli
 
 // Function to generate a random computer choice
 function generateComputerChoice() {
-  const randomNumber =  COMPUTER_CHOICES[Math.floor(Math.random() * COMPUTER_CHOICES.length)];
-  computerChoice = randomNumber;
-   COMPUTER_CHOICE.innerHTML =  computerChoice.toUpperCase();
-   return computerChoice;
+  const RANDOM_CHOICE =  COMPUTER_CHOICES[Math.floor(Math.random() * COMPUTER_CHOICES.length)];
+  computerChoice = RANDOM_CHOICE;
+  COMPUTER_CHOICE.innerHTML =  computerChoice.toUpperCase();
 }
 
 // Function to compare choose in between player and computer
