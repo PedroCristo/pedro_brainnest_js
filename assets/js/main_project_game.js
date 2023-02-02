@@ -1,12 +1,15 @@
 // Get elements from the DOM
-const COMPUTER_CHOICE = document.getElementById('computer-choice');
-const USER_CHOICE = document.getElementById('user-choice');
-const ROUND_RESULT = document.getElementById('result');
-const AVAILABLE_CHOICES = document.querySelectorAll('button');
+const COMPUTER_CHOICE = document.getElementById("computer-choice");
+const USER_CHOICE = document.getElementById("user-choice");
+const ROUND_RESULT = document.getElementById("result");
+const AVAILABLE_CHOICES = document.querySelectorAll("button");
 const PLAYER_SCORE = document.getElementById("player-score")
 const COMPUTER_SCORE = document.getElementById("computer-score")
 const FINAL_RESULT = document.getElementById("final-result");
 const RESTART_GAME = document.getElementById("restart-game");
+
+// Array with the computer available choices
+const COMPUTER_CHOICES = ['rock', 'paper', 'scissors']
 
 // Initialize variables for user and computer choices and scores
 let userChoice;
@@ -30,10 +33,13 @@ RESTART_GAME.addEventListener("click", function() {
 // Function to interact with the player based on their score
 function interactWithPlayer() {
   if (playerScore >= 6 && computerScore <=4) {
-    FINAL_RESULT.innerHTML = `<span class="green"> You are doing well! </span>`;
+    FINAL_RESULT.innerHTML = `<span class="green"> You are doing well... Keep going!! </span>`;
     return;
   } else if (computerScore >=6 && playerScore <=4) {
     FINAL_RESULT.innerHTML = `<span class="red"> You need to do better!! </span>`;
+    return;
+  } else if (playerScore == 1 || computerScore == 1 || computerChoice == userChoice) {
+    FINAL_RESULT.innerHTML = `<span> Playing Game... </span>`;
     return;
   }
 }  
@@ -58,18 +64,10 @@ AVAILABLE_CHOICES.forEach(possibleChoice => possibleChoice.addEventListener('cli
 
 // Function to generate a random computer choice
 function generateComputerChoice() {
-  const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
-  
-  if (randomNumber === 1) {
-    computerChoice = 'rock'
-  }
-  if (randomNumber === 2) {
-    computerChoice = 'scissors'
-  }
-  if (randomNumber === 3) {
-    computerChoice = 'paper'
- }
+  const randomNumber =  COMPUTER_CHOICES[Math.floor(Math.random() * COMPUTER_CHOICES.length)];
+  computerChoice = randomNumber;
    COMPUTER_CHOICE.innerHTML =  computerChoice.toUpperCase();
+   return computerChoice;
 }
 
 // Function to compare choose in between player and computer
