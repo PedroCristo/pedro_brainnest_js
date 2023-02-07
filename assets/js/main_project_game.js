@@ -32,17 +32,17 @@ RESTART_GAME.addEventListener("click", function() {
 
 // Function to interact with the player based on their score
 function interactWithPlayer() {
-  if (playerScore >= 6 && computerScore <=4) {
+  if (playerScore >= 6 && computerScore <= 4) {
     FINAL_RESULT.innerHTML = `<span class="green"> You are doing well... Keep going!! </span>`;
     return;
   } else if (computerScore >=6 && playerScore <=4) {
     FINAL_RESULT.innerHTML = `<span class="red"> You need to do better!! </span>`;
-    return;
+    return; 
   } else if (playerScore == 1 || computerScore == 1 || computerChoice == userChoice) {
     FINAL_RESULT.innerHTML = `<span> Playing Game... </span>`;
     return;
-  }
-}  
+  } 
+}
 
 // Event listener for each of the available choices
 AVAILABLE_CHOICES.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -64,7 +64,7 @@ AVAILABLE_CHOICES.forEach(possibleChoice => possibleChoice.addEventListener('cli
 
 // Function to generate a random computer choice
 function generateComputerChoice() {
-  const RANDOM_CHOICE =  COMPUTER_CHOICES[Math.floor(Math.random() * COMPUTER_CHOICES.length)];
+  const RANDOM_CHOICE = COMPUTER_CHOICES[Math.floor(Math.random() * COMPUTER_CHOICES.length)];
   computerChoice = RANDOM_CHOICE;
   COMPUTER_CHOICE.innerHTML =  computerChoice.toUpperCase();
 }
