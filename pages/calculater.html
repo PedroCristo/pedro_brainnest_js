@@ -5,21 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/calculator.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <title> Calculater </title>
 </head>
 <body>
-    <main>
-        <div class="main-box flex">
-            <p class="subtitle"> Add two numbers to compare them and see which one is the larger. </p>
-            <button class="btn" onclick="findResult()"> Add Numbers </button>
-            <p class="result" id="output"></p>
+    <main class="container">
+        <div class="calculator">
+           <div class="result">
+                <div class="history">
+                    <p id="history-value"></p>
+                </div>
+                <div class="output">
+                    <p id="output-value"></p>
+               </div>
+          </div>
+          <div class="keyboard">
+                <button class="operator" value="clear">C</button>
+                <button class="operator" value="backspace">CE</button>
+                <button class="operator" value="%">%</button>
+                <button class="operator" value="/">/</button>
+        
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="operator" value="*">*</button>
+        
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="operator" value="">-</button>
+        
+                <button class="number" value="1">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="operator" value="+">+</button>
+        
+                <button class="empty" value="empty"></button>
+                <button class="number zero-style" value="0">0</button>
+                <button class="number" value=".">.</button>
+                <button class="operator" value="=">=</button>
+          </div>
         </div>
-        <div class="exit">
-            <a class="btn" href="../index.html"> <- Go Back</a>
-        </div>
-    </main>
+      </main>
 </body>
 <!-- Script Js -->
-<script src="../assets/js/conditional_statements_integers.js"></script>
+<script src="../assets/js/calculater.js"></script>
 </html>

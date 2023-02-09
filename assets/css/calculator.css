@@ -1,0 +1,124 @@
+
+/* Style for the calculater */
+.calculator {
+    width: 330px;
+    height: 530px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    top: 15%;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.calculator .result {
+    padding-bottom: 15px;
+}
+
+.calculator .result p{
+    color: rgb(243, 240, 240) !important;
+    background-color: #919191;
+    height: 75px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.calculator .result .output p {
+   padding-top: 33px;
+   font-size: 27px;
+   overflow: hidden;
+
+}
+
+.calculator .history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+.calculator .output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+.calculator .keyboard {
+    height: 400px;
+}
+
+.calculator .number {
+    border: 1px solid rgb(29, 27, 27) !important;
+    box-shadow: 3px 3px 3px #17181c,
+    -3px -3px 3px #c1c3c9;
+}
+
+.calculator .number:active {
+    background: #f8f8f8;
+    box-shadow: inset 7px 7px 13px #9d9d9d,
+        inset -7px -7px 13px #ffffff;
+    background: #3b3f48 !important;
+    box-shadow: inset 3px 3px 3px #17181c,
+        inset -3px -3px 3px #676e7e;
+}
+
+.calculator .operator, 
+.calculator .number, 
+.calculator .empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 8px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.calculator .operator:hover {
+    transform: scale(0.9);
+
+}
+
+.calculator .number, 
+.calculator .empty {
+    background-color: #eaedef;
+}
+
+.calculator .operator {
+    background-color: lightgrey;
+}
+
+.calculator .number, 
+.calculator .operator {
+    cursor: pointer;
+}
+
+.calculator .operator:active, 
+.calculator .number:active {
+    font-size: 13px;
+}
+
+.calculator .operator:focus, 
+.calculator .number:focus, 
+.calculator .empty:focus {
+    outline: 0;
+}
+
+.calculator .operator:nth-child(4),
+.calculator .operator:nth-child(8),
+.calculator .operator:nth-child(12),
+.calculator .operator:nth-child(16),
+.calculator .operator:nth-child(20) {
+    font-size: 20px;
+    background-color: rgb(160, 178, 238);
+}
+
+.zero-style {
+    width: 130px !important;
+    margin-left: -65px !important;
+}
+

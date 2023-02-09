@@ -83,17 +83,6 @@ main {
     height: 80vh;
 }
 
-.result {
-    border: 2px solid rgb(58, 58, 58);
-    width: 650px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-    margin-top: 50px;
-}
-
 .btn {
     padding: 15px 25px;
     border-radius: 5px;
@@ -207,3 +196,4 @@ main {
     left: 0;
     margin-left: 45px ;
 }
+
